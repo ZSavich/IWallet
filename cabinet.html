@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мой Кошелек | Личный кабинет</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container--fluid">
+        <div class="row">
+            <section class="cabinetNav col-xl-2">
+                <header class="cabinetNav__header">
+                    <h2><i class="greenColor">I</i>Wallet</h2>
+                    <div class="cabinetNav__profile">
+                        <img src="http://placehold.it/60x60" alt="Алексей">
+                        <a href="#" class="cabinetNav__name">Алексей</a>
+                        <a href="#" class="cabinetNav__edit">Редактировать</a>
+                    </div>
+                </header>
+                <div class="cabinetNav__purses purses">
+                    <h2 class="cabinetNav__title">Мои кошельки</h2>
+                    <ul class="cabinetNav__list">
+                        <li class="cabinetNav__item">
+                            <a href="#" class="cabinetNav__link">Личный кошелек</a>
+                            <b class="purses__balance purses__balance--red">-450$</b>
+                        </li>
+                        <li class="cabinetNav__item">
+                            <a href="#" class="cabinetNav__link">Семейный кошелёк</a>
+                            <b class="purses__balance purses__balance--green">3 250$</b>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cabinetNav__manage manage">
+                    <h2 class="cabinetNav__title">Управление кошельком</h2>
+                    <ul class="cabinetNav__list">
+                        <li class="cabinetNav__item cabinetNav__item--icon cabinetNav__item--iconPurse">
+                            <a href="#" class="cabinetNav__link">Мой баланс</a>
+                        </li>
+                        <li class="cabinetNav__item cabinetNav__item--icon cabinetNav__item--iconCosts">
+                            <a href="#" class="cabinetNav__link">Мои расходы</a>
+                        </li>
+                        <li class="cabinetNav__item cabinetNav__item--icon cabinetNav__item--iconInCome">
+                            <a href="#" class="cabinetNav__link">Мои доходы</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="manage__edit">Редактировать кошелек</a>
+                </div>
+                <a href="#" class="btn btn__goOut btn__icon btn__icon--goOut">Выйти</a>
+            </section>
+            <section class="purse col-xl-9">
+                <header class="purse__header row">
+                    <div class="purse__headerLeft col-xl-4">
+                        <h1>Личный кошелёк</h1>
+                    </div>
+                    <div class="purse__headerRight col-xl-8">
+                        <a href="#" class="btn btn--edit btn__icon btn__icon--edit">Редактировать</a>
+                        <a href="#" class="btn btn--remove btn__icon btn__icon--remove">Удалить кошелёк</a>
+                    </div>
+                </header>
+                <div class="purse__info info">
+                    <ul class="info__list row">
+                        <li class="info__item info__item--balance col-xl-4">
+                            <div class="info__border">
+                                <i>Баланс</i>
+                                <b>-450$</b>
+                            </div>
+                        </li>
+                        <li class="info__item info__item--costs col-xl-4">
+                            <div class="info__border">
+                                <i>Всего расходов</i>
+                                <b>3 450$</b>
+                            </div>
+                            <a href="#" class="btn btn--addCosts">Добавить расходы</a>
+                        </li>
+                        <li class="info__item info__item--inCome col-xl-4">
+                            <div class="info__border">
+                                <i>Всего доходов</i>
+                                <b>3 000$</b>
+                            </div>
+                            <a href="#" class="btn btn--addInCome">Добавить доходы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="purse__costs costs">
+                    <h3 class="purse__title">Расходы</h3>
+                    <ul class="costs__list row">
+                        <li class="costs__item costs__icon costs__icon--house col-xl-1">Жильё</li>
+                        <li class="costs__item costs__icon costs__icon--food col-xl-1">Еда</li>
+                        <li class="costs__item costs__icon costs__icon--transport col-xl-1">Транспорт</li>
+                        <li class="costs__item costs__icon costs__icon--hobbi col-xl-1">Хобби</li>
+                        <li class="costs__item costs__icon costs__icon--party col-xl-1">Праздник</li>
+                        <li class="costs__item costs__icon costs__icon--education col-xl-1">Образов.</li>
+                        <li class="costs__item costs__icon costs__icon--pit col-xl-1">Питомец</li>
+                        <li class="costs__item costs__icon costs__icon--plus col-xl-1">Своё</li>
+                    </ul>
+                </div>
+                <div class="purse__summary summary row">
+                    <h3 class="purse__title col-xl-12">Сводка</h3>
+                    <div class="summary__leftList col-xl-6">
+                        <span class="summary__listTitle">Последние рассходы</span>
+                        <ul class="summary__list">
+                            <li class="summary__item summary__icon summary__icon--food">
+                                <p class="summary__title">Купил пельмени</p>
+                                <i class="summary__costs">-300$</i><span class="summary__date">19.02.2019</span></li>
+                            <li class="summary__item summary__icon summary__icon--food">
+                                <p class="summary__title">Купил обед</p>
+                                <i class="summary__costs">-550$</i><span class="summary__date">19.02.2019</span></li>
+                            <li class="summary__item summary__icon summary__icon--food">
+                                <p class="summary__title">Купил мороженку</p>
+                                <i class="summary__costs">-20$</i><span class="summary__date">19.02.2019</span></li>
+                        </ul>
+                    </div>
+                    <div class="summary__rightList col-xl-6">
+                        <span class="summary__listTitle">Последние доходы</span>
+                        <ul class="summary__list">
+                            <li class="summary__item summary__icon summary__icon--food">
+                                <p class="summary__title">Зарплата</p>
+                                <i class="summary__inCome">+3 000$</i><span class="summary__date">19.02.2019</span></li>
+                            <li class="summary__item summary__icon summary__icon--food">
+                                <p class="summary__title">Зарплата</p>
+                                <i class="summary__inCome">+3 000$</i><span class="summary__date">19.02.2019</span></li>
+                            <li class="summary__item summary__icon summary__icon--food">
+                                <p class="summary__title">Зарплата</p>
+                                <i class="summary__inCome">+3 000$</i><span class="summary__date">19.02.2019</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="purse__report report row">
+                    <div class="report__left col-xl-6">
+                        <h3 class="purse__title">Отчёт за</h3>
+                        <ul class="report__periodList">
+                            <li class="report__periodItem">день</li>
+                            <li class="report__periodItem report__periodItem--active">неделю</li>
+                            <li class="report__periodItem">месяц</li>
+                        </ul>
+                    </div>
+                    <div class="report__right">
+                        <ul class="report__filterList col-xl-6">
+                            <li class="report__filterItem report__filterItem--active">Все</li>
+                            <li class="report__filterItem">Расходы</li>
+                            <li class="report__filterItem">Доходы</li>
+                        </ul>
+                    </div>
+                    <ul class="report__list col-xl-12">
+                        <table class="report__table">
+                            <tr>
+                                <th></th>
+                                <th>Категория</th>
+                                <th>Операция</th>
+                                <th>Остаток в кошельке</th>
+                                <th>Дата</th>
+                                <th>Примечание</th>
+                            </tr>
+                            <tr>
+                                <td class="report__icon report__icon--food"><i>Еда</i></td>
+                                <td>Покупка еды</td>
+                                <td class="report__costs">-300$</td>
+                                <td class="report__balance">300$</td>
+                                <td class="report__date">19.02.2019</td>
+                                <td>Купил котлеток на обед</td>
+                            </tr>
+                            <tr>
+                                <td class="report__icon report__icon--money"><i>Деньги</i></td>
+                                <td>Зарплата</td>
+                                <td class="report__inCome">+3 000$</td>
+                                <td class="report__balance">3 300$</td>
+                                <td class="report__date">19.02.2019</td>
+                                <td>Получил зарплату за январь</td>
+                            </tr>
+                        </table>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
