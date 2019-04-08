@@ -1,0 +1,18 @@
+.purses {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #495461;
+
+  &__balance {
+    font-size: 14px;
+    font-weight: bold;
+
+    &--red {
+      color: $pink;
+    }
+
+    &--green {
+      color: $green;
+    }
+  }
+}

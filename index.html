@@ -7,57 +7,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мой Кошелек | Главная страница</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="mainHeader container">
-        <div class="row">
-            <div class="leftBlock col-xl-8">
-                <p class="mainHeader__logo">
-                    <i class="greenColor">I</i>Wallet
+    <div class="d-flex flex-column h-100 index">
+        <header class="mainHeader container">
+            <div class="row">
+                <div class="leftBlock col-xl-7">
+                    <p class="mainHeader__logo">
+                        <i class="greenColor">I</i>Wallet
+                    </p>
+                </div>
+                <div class="rightBlock col-xl-5">
+                    <a href="#" class="btn btn__login">
+                        <svg class="btn__login-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17"><path d="M6.5 8.314c1.9 0 3.44-1.86 3.44-4.157S9.44 0 6.5 0 3.06 1.86 3.06 4.157 4.6 8.314 6.5 8.314zM0 14.66zm13 .11zm-.01-.277c-.06-4-.6-5.14-4.6-5.86-1.07.956-2.69.956-3.76 0-3.98.714-4.54 1.836-4.6 5.73l-.01.3v.42S.96 17 6.5 17s6.5-1.918 6.5-1.918v-.31c0 .023 0-.022-.01-.277z" fill-rule="evenodd"/></svg>
+                        Войти
+                    </a>
+                    <a href="#" class="btn btn__sign btn__icon--plus">
+                        <svg class="btn__sign-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path d="M16.08 7.314H9.7V.923A1.23 1.23 0 0 0 8.5.001a1.23 1.23 0 0 0-1.19.922v6.39H.92c-.54.14-.918.628-.918 1.186S.38 9.546.92 9.686h6.4v6.392a1.23 1.23 0 0 0 2.38 0V9.686h6.4c.54-.14.918-.628.918-1.186s-.378-1.046-.918-1.186z" fill-rule="evenodd"/></svg>
+                        Зарегистрироваться
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section class="welcome col-xl-9">
+                <h1 class="welcome__title">Создайте свой <i class="greenColor">семейный бюджет</i> и начинайте <i class="greenColor">экономить</i></h1>
+                <p class="welcome__sub">Экономия даже с минимальной зарплатой</p>
+                <a href="#" class="btn btn__welcome">Начать экономить</a>
+            </section>
+            <section class="advantage col-xl-12">
+                <ul class="advantage__list row">
+                    <li class="advantage__item col-md-3">
+                        <img src="img/interface.png" alt="Удобный интерфейс" class="advantage__image">
+                        <b class="advantage__title">Удобный интерфейс</b>
+                    </li>
+                    <li class="advantage__item col-md-3">
+                        <img src="img/reg.png" alt="Быстрая регистрация" class="advantage__image">
+                        <b class="advantage__title">Быстрая регистрация</b>
+                    </li>
+                    <li class="advantage__item col-md-3">
+                        <img src="img/pay.png" alt="Без платный подписок
+    и тарифов" class="advantage__image">
+                        <b class="advantage__title">Без платный подписок
+                            и тарифов</b>
+                    </li>
+                    <li class="advantage__item col-md-3">
+                        <img src="img/mob.png" alt="Доступ с любого
+    устройства" class="advantage__image">
+                        <b class="advantage__title">Доступ с любого
+                            устройства</b>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="mainFooter">
+            <div class="container">
+                <p class="mainFooter__author">
+                    Курсовая работа<br>
+                    Сайт разработал <a href="mailto:zsavich59@gmail.com">Савич Евгений</a>
                 </p>
             </div>
-            <div class="rightBlock col-xl-4">
-                <a href="#" class="btn btn__login btn__icon btn__icon--person">Войти</a>
-                <a href="#" class="btn btn__icon btn__icon--plus">Зарегистрироваться</a>
-            </div>
-        </div>
-    </header>
-    <main class="container">
-        <section class="welcome">
-            <h1 class="welcome__title">Создайте свой <i class="greenColor">семейный бюджет</i> и начинайте <i class="greenColor">экономить</i></h1>
-            <p class="welcome__sub">Экономия даже с минимальной зарплатой</p>
-            <a href="#" class="btn btn__welcome">Начать экономить</a>
-        </section>
-        <section class="advantage">
-            <ul class="advantage__list row">
-                <li class="advantage__item col-xl-3">
-                    <img src="http://placehold.it/190x150" alt="Удобный интерфейс" class="advantage__image">
-                    <b class="advantage__title">Удобный интерфейс</b>
-                </li>
-                <li class="advantage__item col-xl-3">
-                    <img src="http://placehold.it/190x150" alt="Быстрая регистрация" class="advantage__image">
-                    <b class="advantage__title">Быстрая регистрация</b>
-                </li>
-                <li class="advantage__item col-xl-3">
-                    <img src="http://placehold.it/190x150" alt="Без платный подписок
-и тарифов" class="advantage__image">
-                    <b class="advantage__title">Без платный подписок
-                        и тарифов</b>
-                </li>
-                <li class="advantage__item col-xl-3">
-                    <img src="http://placehold.it/190x150" alt="Доступ с любого
-устройства" class="advantage__image">
-                    <b class="advantage__title">Доступ с любого
-                        устройства</b>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="mainFooter container">
-        <p class="mainFooter__author">
-            Курсовая работа<br>
-            Сайт создан Савичем Евгением
-        </p>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

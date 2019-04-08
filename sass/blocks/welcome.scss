@@ -1,0 +1,15 @@
+.welcome {
+
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &__sub {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,16 @@
+.mainFooter {
+  margin-top: auto;
+  background-color: #e2e5e8;
+  font-size: 18px;
+  text-align: center;
+  color: $blue;
+  padding: 10px 0;
+
+  &__author {
+    margin: 0;
+
+    a {
+      color: $pink;
+    }
+  }
+}

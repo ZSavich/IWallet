@@ -1,0 +1,52 @@
+.info {
+
+  &__list {
+    margin: 0;
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__border {
+    border: 1px solid $blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+
+    i {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $blue;
+      font-style: normal;
+      margin-bottom: 15px;
+    }
+
+    b {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    &--costs {
+      border-color: $pink;
+      color: $pink;
+
+      i {
+        color: $pink;
+      }
+    }
+
+    &--inCome {
+      border-color: $green;
+      color: $green;
+
+      i {
+        color: $green;
+      }
+    }
+  }
+}

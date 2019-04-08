@@ -7,24 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мой Кошелек | Личный кабинет</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="container--fluid">
+    <main class="container-fluid">
         <div class="row">
-            <section class="cabinetNav col-xl-2">
+            <section class="cabinetNav d-flex flex-column col-md-3 col-xl-2">
                 <header class="cabinetNav__header">
                     <h2><i class="greenColor">I</i>Wallet</h2>
                     <div class="cabinetNav__profile">
-                        <img src="http://placehold.it/60x60" alt="Алексей">
-                        <a href="#" class="cabinetNav__name">Алексей</a>
+                        <div class="cabinetNav__photo">
+                            <img src="img/photo.jpg" alt="Алексей">
+                        </div>
+
+                        <span href="#" class="cabinetNav__name">Алексей</span>
                         <a href="#" class="cabinetNav__edit">Редактировать</a>
                     </div>
                 </header>
                 <div class="cabinetNav__purses purses">
                     <h2 class="cabinetNav__title">Мои кошельки</h2>
                     <ul class="cabinetNav__list">
-                        <li class="cabinetNav__item">
-                            <a href="#" class="cabinetNav__link">Личный кошелек</a>
+                        <li class="cabinetNav__item cabinetNav__item--active">
+                            <a class="cabinetNav__link">Личный кошелек</a>
                             <b class="purses__balance purses__balance--red">-450$</b>
                         </li>
                         <li class="cabinetNav__item">
@@ -32,12 +37,13 @@
                             <b class="purses__balance purses__balance--green">3 250$</b>
                         </li>
                     </ul>
+                    <a href="#" class="cabinetNav__addWallet">+ Новый кошелёк</a>
                 </div>
                 <div class="cabinetNav__manage manage">
                     <h2 class="cabinetNav__title">Управление кошельком</h2>
                     <ul class="cabinetNav__list">
-                        <li class="cabinetNav__item cabinetNav__item--icon cabinetNav__item--iconPurse">
-                            <a href="#" class="cabinetNav__link">Мой баланс</a>
+                        <li class="cabinetNav__item cabinetNav__item--active cabinetNav__item--icon cabinetNav__item--iconPurse">
+                            <a class="cabinetNav__link">Мой баланс</a>
                         </li>
                         <li class="cabinetNav__item cabinetNav__item--icon cabinetNav__item--iconCosts">
                             <a href="#" class="cabinetNav__link">Мои расходы</a>
@@ -48,35 +54,44 @@
                     </ul>
                     <a href="#" class="manage__edit">Редактировать кошелек</a>
                 </div>
-                <a href="#" class="btn btn__goOut btn__icon btn__icon--goOut">Выйти</a>
+                <a href="#" class="btn btn__goOut btn__icon btn__icon--goOut">
+                    <svg class="btn__goOut-icon" xmlns="http://www.w3.org/2000/svg" width="16px" height="17px" viewBox="0 0 800 900"><path d="M357.31 754.16H148.6c-56.706-.067-102.663-46-102.747-102.716V148.557C45.936 91.85 91.894 45.907 148.6 45.84h212.107c12.658 0 22.92-10.262 22.92-22.92S373.365 0 360.707 0H148.6C66.57 0 0 66.723 0 148.557v502.886C0 733.446 66.74 800 148.6 800h208.71a22.92 22.92 0 0 0 19.976-34.425 22.92 22.92 0 0 0-19.976-11.416zM735 383.87L589.3 238.2c-8.963-8.91-23.444-8.888-32.38.047s-8.962 23.416-.055 32.38L663.5 377.25H198.355a22.92 22.92 0 0 0-19.976 34.425 22.92 22.92 0 0 0 19.976 11.416H663.5L556.854 529.71c-6.525 6.567-8.477 16.405-4.956 24.967s11.832 14.178 21.09 14.253a22.37 22.37 0 0 0 16.133-6.791l145.71-145.67a22.9 22.9 0 0 0 .171-32.598z" fill-rule="evenodd"/></svg>
+                    Выйти
+                </a>
             </section>
-            <section class="purse col-xl-9">
-                <header class="purse__header row">
-                    <div class="purse__headerLeft col-xl-4">
+            <section class="purse col-md-9 col-xl-10">
+                <header class="purse__header align-items-center row">
+                    <div class="purse__headerLeft col-md-7 col-xl-4">
                         <h1>Личный кошелёк</h1>
                     </div>
-                    <div class="purse__headerRight col-xl-8">
-                        <a href="#" class="btn btn--edit btn__icon btn__icon--edit">Редактировать</a>
-                        <a href="#" class="btn btn--remove btn__icon btn__icon--remove">Удалить кошелёк</a>
+                    <div class="purse__headerRight col-md-5 col-xl-5 text-right">
+                        <a href="#" class="btn btn--edit btn__icon">
+                            <svg class="btn__icon-edit" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 400 600"><path d="M390.626 78.378a12.356 12.356 0 0 0 12.352-12.358V27.027a27.044 27.044 0 0 0-27-27.027h-261.3a12.354 12.354 0 0 0-8.734 3.62L3.618 106A12.363 12.363 0 0 0 0 114.733v370.24A27.053 27.053 0 0 0 27.013 512h348.964a27.044 27.044 0 0 0 27-27.027V296.29a12.351 12.351 0 1 0-24.7 0v188.684a2.307 2.307 0 0 1-2.3 2.311H27.014a2.313 2.313 0 0 1-2.31-2.311v-357.88h75.32a27.04 27.04 0 0 0 27-27.017v-75.36h248.95a2.306 2.306 0 0 1 2.3 2.311V66.02a12.356 12.356 0 0 0 12.351 12.358zm-288.3 21.7a2.3 2.3 0 0 1-2.3 2.3H42.178L102.324 42.2v57.88zm383.38.322l-14.534-14.543a41.829 41.829 0 0 0-59.107 0L296.7 201.28H96.6a12.358 12.358 0 0 0 0 24.72H272l-74.34 74.38H96.6a12.358 12.358 0 0 0 0 24.716h76.353l-.2.2a12.359 12.359 0 0 0-3.167 5.433L150.51 399.47H96.6a12.358 12.358 0 0 0 0 24.716h63.3l3.1-.4c.065-.017 77.957-21.642 77.957-21.642a12.347 12.347 0 0 0 5.43-3.169l239.32-239.435a41.879 41.879 0 0 0-.001-59.13zM177.644 394.073l10.082-36.326 26.227 26.24zm60.015-21.32l-38.7-38.72L396.5 136.383l38.7 38.72zm230.578-230.7l-15.563 15.57-38.7-38.722 15.563-15.57a17.1 17.1 0 0 1 24.168 0l14.534 14.54a17.125 17.125 0 0 1-.002 24.183z" fill-rule="evenodd"/></svg>
+                            Редактировать
+                        </a>
+                        <a href="#" class="btn btn--remove btn__icon">
+                            <svg class="btn__icon-remove" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 700 700"><path d="M394.027 315.78a13.507 13.507 0 0 1 0-19.562l209.59-209.59A30.188 30.188 0 0 0 612 67.069a30.188 30.188 0 0 0-8.384-19.562L564.493 8.384A30.186 30.186 0 0 0 544.931 0c-8.383 0-13.972 2.794-19.56 8.384l-209.59 209.59a13.507 13.507 0 0 1-19.562 0L86.63 8.384A30.187 30.187 0 0 0 67.069 0a30.187 30.187 0 0 0-19.562 8.384L8.384 47.507A30.188 30.188 0 0 0 0 67.069 30.188 30.188 0 0 0 8.384 86.63l209.59 209.59a13.507 13.507 0 0 1 0 19.562L8.384 525.37a27.013 27.013 0 0 0 0 39.123l39.123 39.123A30.188 30.188 0 0 0 67.069 612a30.188 30.188 0 0 0 19.562-8.384l209.588-209.59a13.507 13.507 0 0 1 19.562 0l209.59 209.59a27.012 27.012 0 0 0 39.123 0l39.123-39.123a27.012 27.012 0 0 0 0-39.123z" fill-rule="evenodd"/></svg>
+                            Удалить кошелёк
+                        </a>
                     </div>
                 </header>
                 <div class="purse__info info">
                     <ul class="info__list row">
-                        <li class="info__item info__item--balance col-xl-4">
+                        <li class="info__item info__item--balance col-xl-3">
                             <div class="info__border">
                                 <i>Баланс</i>
                                 <b>-450$</b>
                             </div>
                         </li>
-                        <li class="info__item info__item--costs col-xl-4">
-                            <div class="info__border">
+                        <li class="info__item col-xl-3">
+                            <div class="info__border info__border--costs">
                                 <i>Всего расходов</i>
                                 <b>3 450$</b>
                             </div>
                             <a href="#" class="btn btn--addCosts">Добавить расходы</a>
                         </li>
-                        <li class="info__item info__item--inCome col-xl-4">
-                            <div class="info__border">
+                        <li class="info__item col-xl-3">
+                            <div class="info__border info__border--inCome">
                                 <i>Всего доходов</i>
                                 <b>3 000$</b>
                             </div>

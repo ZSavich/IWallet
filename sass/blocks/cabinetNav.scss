@@ -1,0 +1,138 @@
+.cabinetNav {
+  height: 100vh;
+  min-height: 800px;
+  background-color: #505b67;
+  color: white;
+
+  &__header {
+
+    padding-bottom: 25px;
+    border-bottom: 1px solid #495461;
+
+    h2 {
+      margin: 30px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+
+    img {
+      display: block;
+      height: 100%;
+      max-width: none;
+    }
+  }
+
+  &__name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__edit {
+    display: block;
+    height: 20px;
+    width: 20px;
+    text-indent: -99999px;
+    background-image: url("../img/icons/icon-edit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 10px;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    color: white;
+
+    &--active {
+      background-color: #334150;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0;
+        height: 100%;
+        width: 10px;
+        background-color: #3ed485;
+
+      }
+    }
+
+    &--icon {
+      padding-left: 60px;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 25px 7px;
+    }
+
+    &--iconPurse {
+      background-image: url("../img/icons/icon-wallet.svg");
+    }
+
+    &--iconCosts {
+      background-image: url("../img/icons/icon-spend.svg");
+      background-position: 25px 10px;
+    }
+
+    &--iconInCome {
+      background-image: url("../img/icons/icon-earn.svg");
+      background-position: 25px 10px;
+    }
+  }
+
+  &__link {
+    color: white;
+    font-size: 18px;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__addWallet {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #b0b3b8;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+
+    }
+  }
+}

@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  background-color: white;
+
+  font-family: "Proxima Nova", Arial, sans-serif;
+  line-height: 21px;
+  font-weight: normal;
+  font-size: 16px;
+  color: $blue;
+}
+
+.index {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+a {
+  color: $green;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.greenColor {
+  color: $green;
+  font-style: normal;
+}
+
+input,
+button {
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
