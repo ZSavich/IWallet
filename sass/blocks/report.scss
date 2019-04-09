@@ -1,0 +1,96 @@
+.report {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  position: relative;
+
+  &__left {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__periodList {
+    display: flex;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  &__periodItem {
+
+    &:not(&--active):hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+
+    &:not(:last-child)::after {
+      content: '/';
+      color: $blue;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    &--active {
+      color: $green;
+    }
+  }
+
+  &__filterList {
+    display: flex;
+  }
+
+  &__filterItem {
+    font-size: 14px;
+    color: #505b67;
+    border: 1px solid #f3f4f6;
+    border-left: none;
+    border-right: none;
+    padding: 5px 25px;
+
+    &:not(&--active):hover {
+      cursor: pointer;
+      border-color: $pink;
+      color: $pink;
+    }
+
+    &--active {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: $green;
+      border-color: $green;
+    }
+
+    &:first-child {
+      border-radius: 15px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 1px solid #f3f4f6;
+    }
+
+    &:last-child {
+      border-radius: 15px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 1px solid #f3f4f6;
+    }
+  }
+
+  &__table {
+    text-align: center;
+
+    &-title {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+
+  &__costs {
+    font-weight: bold;
+    color: $green;
+  }
+
+  &__inCome {
+    font-weight: bold;
+    color: $pink;
+  }
+}

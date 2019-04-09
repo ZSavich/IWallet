@@ -1,0 +1,83 @@
+.summary {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: -35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #f6f7f7;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dfe3e8;
+    margin-right: -15px;
+  }
+
+  &__listTitle {
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+
+    &:nth-of-type(2n+1) {
+      background-color: #dde0e2;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    flex-basis: 33%;
+  }
+
+  &__costs {
+    font-size: 14px;
+    color: $pink;
+    font-style: normal;
+    font-weight: bold;
+    flex-basis: 33%;
+  }
+
+  &__inCome {
+    font-size: 14px;
+    color: $green;
+    font-style: normal;
+    font-weight: bold;
+    flex-basis: 33%;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: #a8b1ba;
+    flex-basis: 33%;
+    text-align: right;
+  }
+  
+  &__icon {
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px;
+
+    &--food {
+      background-image: url("../img/icons/icon-fork.svg");
+    }
+
+    &--money {
+      background-image: url("../img/icons/icon-dollar.svg");
+    }
+  }
+}
